@@ -15,7 +15,7 @@ export const Summary = ({releaseList, setReleaseList}) => {
                         <Li isEntry={(type === "entry")} key={id}>
                             <div>
                                 <TextCaption isBold={true}>{description}</TextCaption>
-                                <TextCaption isBold={false}>{type}</TextCaption>
+                                <TextCaption isBold={false}>{type==="entry" ? "Entrada": "Saída"}</TextCaption>
                             </div>
                             <div>
                                 <TextCaption className="money" isBold={false}>{Number(value).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</TextCaption>

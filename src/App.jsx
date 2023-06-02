@@ -4,7 +4,7 @@ import {Header} from "./components/Header/index.jsx"
 import { GlobalStyle } from './styles/globalStyle'
 import { Section } from './components/Section/index.jsx'
 
-const App = () => {
+export const App = () => {
 
 
   return (
