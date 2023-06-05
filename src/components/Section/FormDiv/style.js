@@ -8,6 +8,7 @@ export const Div = styled.div`
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: 2px solid var(--color-grey-2);
     gap: .8rem;
     padding: 1rem 2rem;
@@ -18,6 +19,7 @@ export const Form = styled.form`
         width: 100%;
         height: 53px;
         padding-left: 5px;
+        box-sizing: border-box;
 
     }
 
@@ -27,6 +29,7 @@ export const Form = styled.form`
         border: none;
         width: 100%;
         height: 53px;
+        
     }
 
     option{
@@ -45,6 +48,7 @@ export const Form = styled.form`
         border: none;
         border-radius: 8px;
         color: var(--color-grey-1);
+        box-sizing: border-box;
     }
 
 ` 
@@ -59,4 +63,6 @@ export const Label = styled.label`
     line-height: 1.125rem;
 
     font-weight: ${({isBold}) => isBold ? 700 : 400};
+
+    align-self: flex-start;
 `
