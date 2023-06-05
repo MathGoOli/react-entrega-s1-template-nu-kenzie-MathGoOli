@@ -9,6 +9,7 @@ export const Summary = ({releaseList, setReleaseList}) => {
         <MainDiv>
             <HeaderTitle2>Resumo financeiro</HeaderTitle2>
             <Ul>
+                { releaseList.length === 0 ? <HeaderTitle2>Você ainda não possui nenhum lançamento</HeaderTitle2>: null}
                 {releaseList.map(({id, type, description, value}) => {
                     
                     return(
