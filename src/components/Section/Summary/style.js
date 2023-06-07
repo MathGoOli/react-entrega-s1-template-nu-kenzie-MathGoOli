@@ -17,7 +17,7 @@ export const Ul = styled.ul`
 export const Li = styled.li`
     width: 100%;
     height: 5rem;
-    padding: 1px 5px;
+    padding: 8px 14px;
     border-left: ${({isEntry}) => isEntry ? "4px solid var(--color-color-secondary)" : "4px solid var(--color-grey-2)" };
     border-radius: 4px;
     background-color: var(--color-grey-1);
