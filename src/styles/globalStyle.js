@@ -66,6 +66,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	section{
 		margin-top: 20px;
+		width: 100%;
 	}
 
 	:root {
@@ -88,5 +89,11 @@ export const GlobalStyle = createGlobalStyle`
 		text-transform: none;
 	}
 
+	main{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
 
 `

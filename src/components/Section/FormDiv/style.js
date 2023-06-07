@@ -16,6 +16,7 @@ export const Form = styled.form`
     input{
         background-color: var(--color-grey-2);
         border: none;
+        border-radius: 8px;
         width: 100%;
         height: 53px;
         padding-left: 5px;
@@ -25,6 +26,7 @@ export const Form = styled.form`
 
     select{
         padding-left: 2px;
+        border-radius: 8px;
         background-color: var(--color-grey-2);
         border: none;
         width: 100%;

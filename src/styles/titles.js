@@ -14,12 +14,12 @@ export const HeaderTitle2 = styled.h2`
 
 export const HeaderTitle3 = styled.h3`
 	font-size: 1rem;
-	font-weight: 700;
+	font-weight: ${({isBold}) => isBold ? 700 : 400};
 	line-height: 1.875rem;
 `
 export const HeaderTitle4 = styled.h4`
 	font-size: 0.75rem;
-	font-weight: 600;
+	font-weight: ${({isBold}) => isBold ? 600 : 400};
 	line-height: 1.625rem;
 `
 export const TextCaption = styled.h4`

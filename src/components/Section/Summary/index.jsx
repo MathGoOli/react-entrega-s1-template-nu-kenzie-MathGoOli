@@ -1,4 +1,4 @@
-import {HeaderTitle2, TextCaption} from "../../../styles/titles.js"
+import {HeaderTitle2, HeaderTitle3, HeaderTitle4 } from "../../../styles/titles.js"
 import {Ul, Li, Button, MainDiv} from "./style.js"
 
 export const Summary = ({releaseList, setReleaseList}) => {
@@ -15,11 +15,11 @@ export const Summary = ({releaseList, setReleaseList}) => {
                     return(
                         <Li isEntry={(type === "entry")} key={id}>
                             <div>
-                                <TextCaption isBold={true}>{description}</TextCaption>
-                                <TextCaption isBold={false}>{type==="entry" ? "Entrada": "Saída"}</TextCaption>
+                                <HeaderTitle3 isBold={true}>{description}</HeaderTitle3>
+                                <HeaderTitle3 isBold={false}>{type==="entry" ? "Entrada": "Saída"}</HeaderTitle3>
                             </div>
                             <div>
-                                <TextCaption className="money" isBold={false}>{Number(value).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</TextCaption>
+                                <HeaderTitle3 className="money" isBold={false}>{Number(value).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</HeaderTitle3>
                                 <Button onClick={() => {excludeLi(id)}}>Excluir</Button>
                             </div>
 
